@@ -1,4 +1,4 @@
-body{
+#page1 body{
     margin: 0;
     padding: 0;
     display: flex;
@@ -30,4 +30,184 @@ body{
 @keyframes spin {
     0% { transform: rotate(0deg);}
     100%{ transform: rotate(360deg);}
+}
+/* style.css */
+
+/* Global styles */
+#page2 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#page2 .container {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+#page2 header {
+    background-color: #dad8e4;
+    padding: 20px 0;
+}
+
+#page2 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page2 .logo {
+    max-width: 150px;
+}
+
+#page2 nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#page2 nav ul li {
+    margin-left: 20px;
+}
+
+#page2 nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#page2 .menu-icon {
+    display: none;
+    max-width: 30px;
+    cursor: pointer;
+}
+
+#page2 button {
+    background-color: #007bff;
+    color: #190404;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#page2 button img {
+    margin-left: 10px;
+    max-width: 20px;
+}
+
+#page2 main {
+    padding: 20px 0;
+}
+
+#page2 main h2, #page2 main h3, #page2 main p, #page2 main h4 {
+    margin: 10px 0;
+}
+
+
+#page2 .Controller {
+    max-width: 100%;
+}
+
+#page2 .color-box {
+    width: 100px;
+    height: 100px;
+    background-color: #dad8e4;
+    margin: 20px 0;
+}
+
+#page2 .add-btn {
+    display: flex;
+    align-items: center;
+}
+
+#page2 .add-btn img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+#page2 .add-btn p {
+    margin: 0;
+}
+
+#page2 footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#page2 .social-links img {
+    max-width: 30px;
+    margin: 0 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #page2 .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #page2 .menu-icon {
+        display: block;
+    }
+
+    #page2 nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #page2 nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #page2 nav ul.show {
+        display: flex;
+    }
+
+    #page2 .row {
+        flex-direction: column;
+    }
+
+    #page2 .add-btn {
+        justify-content: center;
+    }
+
+    #page2 .social-links {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #page2 .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #page2 nav ul {
+        display: flex;
+    }
+
+    #page2 .menu-icon {
+        display: none;
+    }
+
+    #page2 .row {
+        flex-direction: row;
+    }
+
+    #page2 .add-btn {
+        justify-content: flex-start;
+    }
+
+    #page2 .social-links {
+        justify-content: flex-start;
+    }
 }
